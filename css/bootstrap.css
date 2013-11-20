@@ -47,7 +47,7 @@ html {
 
 body {
   margin: 0;
-  padding-top:65px;
+  padding-top:40px;
   background-color: #E5E5E5;
 }
 
@@ -4314,7 +4314,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 28px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4484,8 +4484,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 32px;
+  padding: 5px 15px;
+  font-size: 28px;
   line-height: 20px;
 }
 

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Rosario:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:100,300,400,700);
 
 html,
 body {
@@ -10,11 +10,11 @@ body {
     text-align: left;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
     background: rgb(41, 74, 26);
-    background: linear-gradient(to left, #668E6D 0%, #2f412e 100%);
+    background: linear-gradient(to right, #089D55 0%, #0CA65E 100%);
 }
 .navbar-brand {
     color: #fff;
-    font-family: rosario, arial, sans-serif;
+    font-family: lato, arial, sans-serif;
     text-shadow: 0px -1px 0px rgba(19, 82, 19, 0.78);
 }
 
