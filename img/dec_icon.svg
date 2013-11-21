@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   id="svg73789"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="dec_icon.svg">
+  <defs
+     id="defs73791" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-84.804531"
+     inkscape:cy="41.69277"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata73794">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.36218)">
+    <rect
+       style="fill:#3bbec0;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect70056-2"
+       width="100"
+       height="100"
+       x="0"
+       y="952.36218" />
+    <path
+       id="path76045"
+       d="m 49.998145,1035.6957 c -8.18288,0 -14.81365,-6.6308 -14.81365,-14.8137 0,-3.7506 1.40394,-7.166 3.70434,-9.7776 v -30.96452 c 0,-6.1363 4.97493,-11.1112 11.10931,-11.1112 6.13809,0 11.11302,4.9749 11.11302,11.1112 v 30.96452 c 2.29669,2.6116 3.70434,6.027 3.70434,9.7776 0,8.1829 -6.63447,14.8137 -14.81736,14.8137 z m 3.70434,-21.1944 v -7.9513 -19.00332 -7.4068 c 0,-2.0448 -1.65769,-3.7044 -3.70434,-3.7044 -2.04479,0 -3.70434,1.6596 -3.70434,3.7044 v 7.4068 19.00332 7.9513 c -2.20223,1.2836 -3.70063,3.6469 -3.70063,6.3807 0,4.0915 3.31353,7.405 7.40497,7.405 4.09145,0 7.40868,-3.3135 7.40868,-7.405 0,-2.7338 -1.4984,-5.0971 -3.70434,-6.3807 z m -3.70434,11.9373 c -3.06719,0 -5.5528,-2.4894 -5.5528,-5.5566 0,-2.417 1.54841,-4.4489 3.70063,-5.2157 v -9.6016 h 3.70434 v 9.6016 c 2.15223,0.7668 3.70434,2.8005 3.70434,5.2157 0,3.0672 -2.48931,5.5566 -5.55651,5.5566 z"
+       clip-rule="evenodd"
+       inkscape:connector-curvature="0"
+       style="fill:#eeffff;fill-opacity:1;fill-rule:evenodd" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="1.6833496"
+       y="1047.912"
+       id="text76054"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan76056"
+         x="1.6833496"
+         y="1047.912">November/December</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="-129.13971"
+       y="1013.4944"
+       id="text76054-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan76056-6"
+         x="-129.13971"
+         y="1013.4944">September/October</tspan></text>
+  </g>
+</svg>

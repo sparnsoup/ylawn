@@ -38,7 +38,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
    id="namedview2997"
    showgrid="false"
    inkscape:zoom="0.4609375"
-   inkscape:cx="164.2"
+   inkscape:cx="-174.24068"
    inkscape:cy="156.002"
    inkscape:window-x="0"
    inkscape:window-y="0"
@@ -47,10 +47,12 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
    fit-margin-top="8"
    fit-margin-bottom="8"
    fit-margin-left="8"
-   fit-margin-right="8" />
+   fit-margin-right="8"
+   showguides="true"
+   inkscape:guide-bbox="true" />
 <path
    id="calendar-6-icon"
    d="m 355.389,71.983 c 0,10.035 -8.135,18.17 -18.17,18.17 -10.035,0 -18.171,-8.135 -18.171,-18.17 V 26.254 c 0,-10.035 8.136,-18.1699999 18.171,-18.1699999 10.035,0 18.17,8.1349999 18.17,18.1699999 v 45.729 z m -245.5,-45.811 c 0,-10.035 -8.136,-18.1719999 -18.170002,-18.1719999 -10.036,0 -18.171,8.1369999 -18.171,18.1719999 v 45.727 c 0,10.035 8.135,18.172 18.171,18.172 C 101.753,90.071 109.889,81.934 109.889,71.899 V 26.172 z m 267.463,26.53 v 18.617 c 0,22.129 -18.004,40.133 -40.133,40.133 -22.13,0 -40.134,-18.004 -40.134,-40.133 V 52.702 H 131.852 v 18.533 c 0,22.131 -18.004,40.135 -40.133002,40.135 -22.13,0 -40.134,-18.004 -40.134,-40.135 V 52.702 h -43.585 v 359 H 420 v -359 h -42.648 z m 2.648,319 H 47.999998 V 149.231 H 380 V 371.702 z M 198.885,340.944 C 241.171,265.113 270.537,226.139 310.633,191.147 L 305.42,179.16 C 256.8,209.411 230.643,232.202 191.056,277.127 170,262.116 158.118,255.218 139.383,246.153 l -16.016,14.807 c 32.031,29.688 49.438,49.269 75.518,79.984 z"
-   style="fill:#473d32;fill-opacity:1"
+   style="fill:#e87352;fill-opacity:1"
    inkscape:connector-curvature="0" />
 </svg>
