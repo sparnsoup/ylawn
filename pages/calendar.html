@@ -14,6 +14,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <script src="http://use.edgefonts.net/josefin-slab:n4,n7,i3,n3,i4,n1,i7,i1,i6,n6:all;lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all;rosario:n7,i7,i4,n4:all.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
@@ -31,31 +32,120 @@
             </div>
         </div>
         <div class="section">
-           <div class="sidebar">
+            <div class="sidebar">
                 <div class="month jan">
-                    <a href="/"></a>
-               </div>
-               <div class="month mar">
-                   <a href="/"></a>
-               </div>
-               <div class="month may">
-                   <a href="/"></a>
-               </div>
-               <div class="month jul">
-                   <a href="/"></a>
-               </div>
-               <div class="month sep">
-                   <a href="/"></a>
-               </div>
-               <div class="month nov">
-                   <a href="/"></a>
-               </div>
+                    <a href="#" id="jan-link"></a>
+                </div>
+                <div class="month mar">
+                    <a href="#" id="mar-link"></a>
+                </div>
+                <div class="month may">
+                    <a href="#may-page" id="may-link"></a>
+                </div>
+                <div class="month jul">
+                    <a href="#" id="jul-link"></a>
+                </div>
+                <div class="month sep">
+                    <a href="#" id="sep-link"></a>
+                </div>
+                <div class="month nov">
+                    <a href="#" id="nov-link"></a>
+                </div>
             </div>
             <div class="main-content">
+                <div class="cal-content" id="jan-tips">
+                    <span class="card-title">January - February</span>
+                </div>
+                <div class="cal-content" id="mar-tips">
+                    <span class="card-title">March - April</span>
+                </div>
+                <div class="cal-content" id="may-tips">
+                    <span class="card-title" id="may-page">May - June</span>
+                </div>
+                <div class="cal-content" id="jul-tips">
+                    <span class="card-title">July - August</span>
+                </div>
+                <div class="cal-content" id="sep-tips">
+                    <span class="card-title">September - October</span>
+                </div>
+                <div class="cal-content" id="nov-tips">
+                    <span class="card-title">November - December</span>
+                </div>
             </div>
             <div id="clear"></div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('#mar-tips').hide(0);
+            $('#may-tips').hide(0);
+            $('#jul-tips').hide(0);
+            $('#sep-tips').hide(0);
+            $('#nov-tips').hide(0);
+
+            // toggles the slickbox on clicking the noted link  
+            $('#jan-link').click(function() {
+                $('#jan-tips').show(0);
+                $('#mar-tips').hide(0);
+                $('#may-tips').hide(0);
+                $('#jul-tips').hide(0);
+                $('#sep-tips').hide(0);
+                $('#nov-tips').hide(0);
+                $('html,body').animate({ scrollTop: 0 }, 200);
+                return false;
+            });
+            $('#mar-link').click(function() {
+                $('#jan-tips').hide(0);
+                $('#mar-tips').show(0);
+                $('#may-tips').hide(0);
+                $('#jul-tips').hide(0);
+                $('#sep-tips').hide(0);
+                $('#nov-tips').hide(0);
+                $('html,body').animate({ scrollTop: 0 }, 200);
+                return false;
+            });
+            $('#may-link').click(function() {
+                $('#jan-tips').hide(0);
+                $('#mar-tips').hide(0);
+                $('#may-tips').show(0);
+                $('#jul-tips').hide(0);
+                $('#sep-tips').hide(0);
+                $('#nov-tips').hide(0);
+                $('html,body').animate({ scrollTop: 0 }, 200);
+                return false;
+            });
+            $('#jul-link').click(function() {
+                $('#jan-tips').hide(0);
+                $('#mar-tips').hide(0);
+                $('#may-tips').hide(0);
+                $('#jul-tips').show(0);
+                $('#sep-tips').hide(0);
+                $('#nov-tips').hide(0);
+                $('html,body').animate({ scrollTop: 0 }, 200);
+                return false;
+            });
+            $('#sep-link').click(function() {
+                $('#jan-tips').hide(0);
+                $('#mar-tips').hide(0);
+                $('#may-tips').hide(0);
+                $('#jul-tips').hide(0);
+                $('#sep-tips').show(0);
+                $('#nov-tips').hide(0);
+                $('html,body').animate({ scrollTop: 0 }, 200);
+                return false;
+            });
+            $('#nov-link').click(function() {
+                $('#jan-tips').hide(0);
+                $('#mar-tips').hide(0);
+                $('#may-tips').hide(0);
+                $('#jul-tips').hide(0);
+                $('#sep-tips').hide(0);
+                $('#nov-tips').show(0);
+                $('html,body').animate({ scrollTop: 0 }, 200);
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>

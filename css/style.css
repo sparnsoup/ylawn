@@ -103,7 +103,7 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
     width: 100px;
     float: left;
     padding: 0 0 0 0px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .month {
@@ -150,4 +150,108 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 
 #clear {
     clear:both;
+}
+
+.cal-content {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 8px 0px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 10px 10px;
+    min-height:600px;  
+}
+
+
+
+#jan-tips {
+        border-left:3px solid #60cd9b  
+}
+
+#mar-tips {
+    border-left:3px solid #60cd9b
+}
+
+#may-tips {
+    border-left:3px solid #67b0d1
+}
+
+#jul-tips {
+        border-left:3px solid #67b0d1;
+}
+
+#sep-tips {
+    border-left:3px solid #3bbec0
+}
+
+#nov-tips {
+    border-left:3px solid #3bbec0;
+}
+
+.body-wrap-lawn {
+    min-height:100%;
+    background-image:url(../img/blur3.jpg);
+    background-size:cover;
+}
+
+.content-card a{
+    display:inline-block;
+    width: 100%;
+    height:100%;
+}
+
+.lawn-card {
+    border-radius: 4px;
+    margin: 8px 0px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 400px;
+}
+
+.lawn-card-top {
+    background-image:url(../img/lowerlawn.png);
+    background-size:cover;
+    height:200px;
+    position: relative;
+}
+
+.lawnid {
+    position: absolute;
+    color: white;
+    font-size: 75px;
+    top: 0px;
+    left: 15px;
+    font-family : 'josefin-slab', serif;
+    font-weight: 100;
+    line-height: 0.8em;
+    background-color:rgba(0,0,0,0.2);
+    min-width:95%;
+}
+
+.mow-tab-nav {
+    position: absolute;
+    bottom: 0px;
+    width: 33.3%;
+    border-bottom: 5px solid rgb(242, 167, 167);
+    text-align: center;
+    background: rgba(0,0,0, .62);
+    cursor: pointer;
+}
+
+.tabtext {
+    color: white;
+    font-size: 32px;
+    font-family: 'Roboto', serif;
+    font-weight: 200;
+    line-height: 1.2em;
+}
+
+.details-banner {
+    background-image:url(../img/lowerlawn.png);
+    background-size:cover;
+    height:200px;
+    position: relative;
+    margin:10px -5px 0 -5px;
 }
