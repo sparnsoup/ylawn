@@ -32,6 +32,7 @@
             </div>
         </div>
         <div class="section">
+            <div class="menu-toggle"><img src="../img/menu.svg" class="menu-button" /></div>
             <div class="sidebar">
                 <div class="month jan">
                     <a href="#" id="jan-link"></a>
@@ -77,6 +78,7 @@
     </div>
     <script>
         $(document).ready(function() {
+            $('.menu-toggle').hide(0);
             $('#mar-tips').hide(0);
             $('#may-tips').hide(0);
             $('#jul-tips').hide(0);
@@ -92,6 +94,9 @@
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
                 $('html,body').animate({ scrollTop: 0 }, 200);
+                $('.sidebar').toggle("slide");
+                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
+                    $('.menu-toggle').show(0)});
                 return false;
             });
             $('#mar-link').click(function() {
@@ -102,6 +107,9 @@
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
                 $('html,body').animate({ scrollTop: 0 }, 200);
+                $('.sidebar').toggle("slide");
+                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
+                    $('.menu-toggle').show(0)});
                 return false;
             });
             $('#may-link').click(function() {
@@ -112,6 +120,9 @@
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
                 $('html,body').animate({ scrollTop: 0 }, 200);
+                $('.sidebar').toggle("slide");
+                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
+                    $('.menu-toggle').show(0)});
                 return false;
             });
             $('#jul-link').click(function() {
@@ -122,6 +133,9 @@
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
                 $('html,body').animate({ scrollTop: 0 }, 200);
+                $('.sidebar').toggle("slide");
+                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
+                    $('.menu-toggle').show(0)});
                 return false;
             });
             $('#sep-link').click(function() {
@@ -132,6 +146,9 @@
                 $('#sep-tips').show(0);
                 $('#nov-tips').hide(0);
                 $('html,body').animate({ scrollTop: 0 }, 200);
+                $('.sidebar').toggle("slide");
+                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
+                    $('.menu-toggle').show(0)});
                 return false;
             });
             $('#nov-link').click(function() {
@@ -142,6 +159,15 @@
                 $('#sep-tips').hide(0);
                 $('#nov-tips').show(0);
                 $('html,body').animate({ scrollTop: 0 }, 200);
+                $('.sidebar').toggle("slide");
+                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
+                    $('.menu-toggle').show(0)});
+                return false;
+            });
+            $('.menu-toggle').click(function() {
+                $('.sidebar').toggle("slide");
+                $('.menu-toggle').hide(0);
+                $('.main-content').animate({marginLeft:"105px"}, "normal");
                 return false;
             });
         });

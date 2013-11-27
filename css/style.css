@@ -4,11 +4,12 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: roboto, sans-serif;
 }
 .navbar {
     color: #fff;
     text-align: left;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+    text-shadow: 0 1px 3px rgba(0s, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
     background: rgb(41, 74, 26);
     background: linear-gradient(to right, #30664d 0%, #30664d 100%);
 }
@@ -42,7 +43,7 @@ body {
 }
 .card-title {
     font-family: josefin-slab, arial, sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     padding: 2px 0px 0px 15px;
     font-weight:400;
     color: #555555;
@@ -220,8 +221,8 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 .lawnid {
     position: absolute;
     color: white;
-    font-size: 75px;
-    top: 0px;
+    font-size: 65px;
+    top: 2px;
     left: 15px;
     font-family : 'josefin-slab', serif;
     font-weight: 100;
@@ -251,7 +252,119 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 .details-banner {
     background-image:url(../img/lowerlawn.png);
     background-size:cover;
-    height:200px;
+    min-height:120px;
     position: relative;
-    margin:10px -5px 0 -5px;
+    margin:5px -5px 0 -5px;
+}
+
+.menu-toggle {
+    float: left;
+    padding: 0 0 0 0px;
+    margin-top: 0px;
+    cursor:pointer;
+}
+
+.menu-button {
+    height:25px;
+    width:25px;
+}
+
+.card-type {
+    font-family: lato, roboto, sans-serif;
+    font-weight:300;
+    font-size: 24px;
+}
+
+.card-type-sub {
+    font-family: lato, roboto, sans-serif;
+    font-weight:400;
+    font-size: 11px;
+    color:#B1B1B1;
+    margin-top: -3px;
+}
+
+.mow-title {
+    color: #60cd9b;
+}
+
+.water-title {
+    color: #67b0d1;
+}
+
+.fert-title {
+    color: #3bbec0;
+}
+
+
+
+.horiz-line {
+    margin: 4px -8px 4px -8px;
+    border-bottom: 1px solid #eee;
+    clear:both;
+}
+
+.mow-action {
+    color:#e87352;
+    font-size:18px;
+    font-family: roboto, sans-serif;
+    font-weight:300;
+    margin: 10px 0px;
+}
+
+.card-wrapper {
+    padding:5px 15px 0px 15px;
+}
+
+.card-data-row {
+    overflow:hidden;  
+}
+
+.data-date {
+    width:35%;
+    float:left;
+    color: #B1B1B1;
+    text-align:center;
+    font-family: lato, roboto, sans-serif;
+    font-size:36px;
+    font-weight:300;
+    margin-right: 15px;
+}
+
+
+
+.data-label {
+    width:35%;
+    background-color: #B1B1B1;
+    float:left;
+    color: #ffffff;
+    text-align:center;
+    font-family: lato, roboto, sans-serif;
+    font-size:11px;
+    font-weight:300;
+    border-radius:20px;
+    margin:0 15px 15px 0;
+}
+
+.data-types {
+    width:50%;
+    float:left;
+    color: #B1B1B1;
+    text-align:center;
+    font-family: lato, roboto, sans-serif;
+    font-size:36px;
+    font-weight:300;
+    margin-right: 15px;
+}
+
+.data-type-label {
+    width:50%;
+    background-color: #B1B1B1;
+    float:left;
+    color: #ffffff;
+    text-align:center;
+    font-family: lato, roboto, sans-serif;
+    font-size:11px;
+    font-weight:300;
+    border-radius:20px;
+    margin:0 15px 15px 0;
 }
