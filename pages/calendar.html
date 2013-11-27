@@ -32,7 +32,9 @@
             </div>
         </div>
         <div class="section">
-            <div class="menu-toggle"><img src="../img/menu.svg" class="menu-button" /></div>
+            <div class="menu-toggle">
+                <img src="../img/menu.svg" class="menu-button" />
+            </div>
             <div class="sidebar">
                 <div class="month jan">
                     <a href="#" id="jan-link"></a>
@@ -56,21 +58,79 @@
             <div class="main-content">
                 <div class="cal-content" id="jan-tips">
                     <span class="card-title">January - February</span>
+                    <div class="month-content">
+                        <h2 class="card-h2 mow-title">Lawn Care</h2>
+                        <h3 class="card-h3">Janurary</h3>
+                        <p>Sharpen mower blades and tune-up mower. Refrain from walking on soggy or frozen grass.
+                            <b>Do not mow at this time.</b>Stay inside drinking hot chocolate, thinking positively about how fantastic the lawn will look this spring and summer. Look for good deals on a volleyball set.</p>
+                        <h3 class="card-h3">February</h3>
+                        <p>Check lawn for standing puddles of water. Correct drainage where necessary or replant those areas with more suitable groundcovers.
+                            <b>Do not mow at this time.</b>Birds pecking at the turf help remove soil grubs such as crane ﬂy. Sit back and watch all the work being done for you</p>
+                    </div>
                 </div>
                 <div class="cal-content" id="mar-tips">
                     <span class="card-title">March - April</span>
+                    <div class="month-content">
+                        <h2 class="card-h2 mow-title">Lawn Care</h2>
+                        <h3 class="card-h3">March</h3>
+                        <p>If you are planning to renovate or start a new lawn, and it’s not excessively wet, it’s time to prepare. Dethatch the entire lawn if old roots and stems at crown level exceed one-half inch. Aerate by hand or mechanically. Dig out or spot treat perennial weeds.
+                            <b>Mow, if necessary, to a height of 2 inches.</b>
+                        </p>
+                        <h3 class="card-h3">April</h3>
+                        <p>Rake and overseed bare spots (or plant new lawn) if it’s not excessively wet or cold.
+                            <b>Fertilize in late April,</b>using organic or slow-release formulations.
+                            <b>Mow regularly at 2 inches.</b>Remember not to remove more than one-third of the lawn's height at any given time. Recycle grass clippings onto the lawn as you mow</p>
+                    </div>
                 </div>
                 <div class="cal-content" id="may-tips">
                     <span class="card-title" id="may-page">May - June</span>
+                    <div class="month-content">
+                        <h2 class="card-h2 mow-title">Lawn Care</h2>
+                        <h3 class="card-h3">May</h3>
+                        <p>Rake and overseed bare spots (or plant new lawn) if not in April. Check all irrigation systems and insure that lawn optimally receives one-inch of water weekly, either through rain or by irrigation.
+                            <b>Mow every 5 - 7 days maintaining a height of 2 inches.</b>Dig out dandelions to prevent seeding.</p>
+                        <h3 class="card-h3">June</h3>
+                        <p>Water deeply, slowly and infrequently. No established lawn should be watered more than 2-3 times per week, even in hot conditions. Do not rely on timers for irrigation as temperatures will dictate water needs in addition to lack of rainfall. Continue "grasscycling".
+                            <b>Mow 1-2 times weekly,</b>removing no more than 1/3 of the height.</p>
+                    </div>
                 </div>
                 <div class="cal-content" id="jul-tips">
                     <span class="card-title">July - August</span>
+                    <div class="month-content">
+                        <h2 class="card-h2 mow-title">Lawn Care</h2>
+                        <h3 class="card-h3">July</h3>
+                        <p>Water deeply to one-inch per week, or allow lawn to go dormant by watering just once a month. Avoid fertilizing in hot, dry weather.
+                            <b>Mow regularly</b>to prevent weed seed spread.</p>
+                        <h3 class="card-h3">August</h3>
+                        <p>Continue to water and
+                            <b>mow regularly</b>. Survey the lawn, planning which areas need fall renovation. Plan to eliminate lawn areas on steep slopes, or in deep shade. Research suitable groundcovers as lawn substitutes for these areas.</p>
+                    </div>
                 </div>
                 <div class="cal-content" id="sep-tips">
                     <span class="card-title">September - October</span>
+                    <div class="month-content">
+                        <h2 class="card-h2 mow-title">Lawn Care</h2>
+                        <h3 class="card-h3">September</h3>
+                        <p>When rains begin,
+                            <b>fertilize with natural organic or slow release formulations.</b>Late in the month, begin fall renovation by thatching, aerating and overseeding. Rake and overseed bare spots, or Install new seed or sod lawns.</p>
+                        <h3 class="card-h3">October</h3>
+                        <p>Thatch, aerate and install sod. Top dress with up to one-inch of sifted compost if lawn was planted with very lile organic maer. Turn oﬀ irrigation systems.
+                            <b>Mow if necessary.</b>
+                        </p>
+                    </div>
                 </div>
                 <div class="cal-content" id="nov-tips">
                     <span class="card-title">November - December</span>
+                    <div class="month-content">
+                        <h2 class="card-h2 mow-title">Lawn Care</h2>
+                        <h3 class="card-h3">November</h3>
+                        <p>Late in the month, apply winter fertilizer which is vital to maintain healthy turf.
+                            <b>Mow if conditions are not excessively wet and cold.</b>
+                        </p>
+                        <h3 class="card-h3">December</h3>
+                        <p>Apply winter fertilizer if you didn't do so in November. Rake leaves and lier oﬀ lawn (as appropriate).
+                            <b>Do not mow.</b>Relax till March again.</p>
+                    </div>
                 </div>
             </div>
             <div id="clear"></div>
@@ -84,7 +144,7 @@
             $('#jul-tips').hide(0);
             $('#sep-tips').hide(0);
             $('#nov-tips').hide(0);
-
+            
             // toggles the slickbox on clicking the noted link  
             $('#jan-link').click(function() {
                 $('#jan-tips').show(0);
@@ -93,10 +153,15 @@
                 $('#jul-tips').hide(0);
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
-                $('html,body').animate({ scrollTop: 0 }, 200);
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 200);
                 $('.sidebar').toggle("slide");
-                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
-                    $('.menu-toggle').show(0)});
+                $('.main-content').animate({
+                    marginLeft: "30px"
+                }, "normal", function() {
+                    $('.menu-toggle').show(0)
+                });
                 return false;
             });
             $('#mar-link').click(function() {
@@ -106,10 +171,15 @@
                 $('#jul-tips').hide(0);
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
-                $('html,body').animate({ scrollTop: 0 }, 200);
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 200);
                 $('.sidebar').toggle("slide");
-                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
-                    $('.menu-toggle').show(0)});
+                $('.main-content').animate({
+                    marginLeft: "30px"
+                }, "normal", function() {
+                    $('.menu-toggle').show(0)
+                });
                 return false;
             });
             $('#may-link').click(function() {
@@ -119,10 +189,15 @@
                 $('#jul-tips').hide(0);
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
-                $('html,body').animate({ scrollTop: 0 }, 200);
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 200);
                 $('.sidebar').toggle("slide");
-                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
-                    $('.menu-toggle').show(0)});
+                $('.main-content').animate({
+                    marginLeft: "30px"
+                }, "normal", function() {
+                    $('.menu-toggle').show(0)
+                });
                 return false;
             });
             $('#jul-link').click(function() {
@@ -132,10 +207,15 @@
                 $('#jul-tips').show(0);
                 $('#sep-tips').hide(0);
                 $('#nov-tips').hide(0);
-                $('html,body').animate({ scrollTop: 0 }, 200);
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 200);
                 $('.sidebar').toggle("slide");
-                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
-                    $('.menu-toggle').show(0)});
+                $('.main-content').animate({
+                    marginLeft: "30px"
+                }, "normal", function() {
+                    $('.menu-toggle').show(0)
+                });
                 return false;
             });
             $('#sep-link').click(function() {
@@ -145,10 +225,15 @@
                 $('#jul-tips').hide(0);
                 $('#sep-tips').show(0);
                 $('#nov-tips').hide(0);
-                $('html,body').animate({ scrollTop: 0 }, 200);
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 200);
                 $('.sidebar').toggle("slide");
-                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
-                    $('.menu-toggle').show(0)});
+                $('.main-content').animate({
+                    marginLeft: "30px"
+                }, "normal", function() {
+                    $('.menu-toggle').show(0)
+                });
                 return false;
             });
             $('#nov-link').click(function() {
@@ -158,16 +243,23 @@
                 $('#jul-tips').hide(0);
                 $('#sep-tips').hide(0);
                 $('#nov-tips').show(0);
-                $('html,body').animate({ scrollTop: 0 }, 200);
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 200);
                 $('.sidebar').toggle("slide");
-                $('.main-content').animate({marginLeft: "30px"}, "normal", function(){
-                    $('.menu-toggle').show(0)});
+                $('.main-content').animate({
+                    marginLeft: "30px"
+                }, "normal", function() {
+                    $('.menu-toggle').show(0)
+                });
                 return false;
             });
             $('.menu-toggle').click(function() {
                 $('.sidebar').toggle("slide");
                 $('.menu-toggle').hide(0);
-                $('.main-content').animate({marginLeft:"105px"}, "normal");
+                $('.main-content').animate({
+                    marginLeft: "105px"
+                }, "normal");
                 return false;
             });
         });

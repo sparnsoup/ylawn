@@ -221,7 +221,7 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 .lawnid {
     position: absolute;
     color: white;
-    font-size: 65px;
+    font-size: 60px;
     top: 2px;
     left: 15px;
     font-family : 'josefin-slab', serif;
@@ -250,7 +250,6 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 }
 
 .details-banner {
-    background-image:url(../img/lowerlawn.png);
     background-size:cover;
     min-height:120px;
     position: relative;
@@ -267,6 +266,7 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 .menu-button {
     height:25px;
     width:25px;
+    margin-left:2px;
 }
 
 .card-type {
@@ -367,4 +367,46 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
     font-weight:300;
     border-radius:20px;
     margin:0 15px 15px 0;
+}
+
+
+
+.card-h2 {
+    font-family: lato, arial, sans-serif;
+    font-size: 18px;
+    padding: 2px 0px 0px 15px;
+    font-weight:300;
+    line-height:1.2em
+}
+
+.card-h3 {
+    font-family: lato, arial, sans-serif;
+    font-size: 16px;
+    padding: 2px 0px 0px 15px;
+    font-weight:400;
+    color: #999999;
+    line-height:1em
+}
+
+.month-content p{
+    font-family: lato, arial, sans-serif;
+    font-size: 14px;
+    padding: 2px 0px 0px 15px;
+    font-weight:300;
+    color: #999999;
+    line-height:1em
+}
+
+.lawn-bg1 {
+    background-image:url(../img/House%201.jpg);
+    background-position: 0% 70%;
+}
+
+.lawn-bg2 {
+        background-image:url(../img/House%2010.jpg);
+    background-position: 0% 90%;
+}
+
+.lawn-bg3 {
+    background-image:url(../img/lowerlawn.png);
 }
