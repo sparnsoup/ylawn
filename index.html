@@ -88,5 +88,12 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>var TestObject = Parse.Object.extend("TestObject");
+var testObject = new TestObject();
+testObject.save({foo: "bar"}, {
+  success: function(object) {
+    alert("yay! it worked");
+  }
+});</script>
 </body>
 </html>
