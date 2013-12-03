@@ -4,11 +4,17 @@
 <head>
     <title>yLawn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+    <meta charset="utf-8">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
+    <link href="../css/default.date.css" rel="stylesheet">
     <script src="http://use.edgefonts.net/josefin-slab:n4,n7,i3,n3,i4,n1,i7,i1,i6,n6:all;lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all;rosario:n7,i7,i4,n4:all.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src=../js/bootstrap.js></script>
+    <script src="../libs/picker.js"></script>
+    <script src="../libs/picker.date.js"></script>
 </head>
 
 <body>
@@ -47,6 +53,22 @@
                         <div class="horiz-line"></div>
                         <div class="mow-action">
                             <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
+                        <form role="form">
+                            <div class="form-update" id="mow-update">
+                                <div class="horiz-form">
+                                    <label>Date:</label>
+                                    <input type="text" class="datepicker">
+                                </div>
+                                <div class="horiz-form">
+                                    <label>Direction:</label>
+                                    <select>
+                                        <option value="" disabled selected style="display:none;">Direction...</option>
+                                        <option value="NS">North-South</option>
+                                        <option value="EW">East-West</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="content-card">
@@ -95,8 +117,23 @@
                     </div>
                 </div>
             </div>
+            <!--conatiner-->
         </div>
     </div>
+    <script>
+        $('.datepicker').pickadate({
+            format: 'mm/dd'
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+                $('#mow-update').hide(0);
+            
+                $('.mow-action').click(function() {
+                    $('#mow-update').slideToggle(400);
+                });
+            });
+    </script>
 </body>
 
 </html>

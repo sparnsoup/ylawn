@@ -410,3 +410,32 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6
 .lawn-bg3 {
     background-image:url(../img/lowerlawn.png);
 }
+
+.btn-yprimary {
+    background-color: #e87352;
+    color: #fff;
+}
+
+label {
+    font-family: lato, roboto, sans-serif;
+    color: #ababab;
+}
+
+input {
+    font-family: lato, roboto, sans-serif;
+    color: #e87352;
+    margin-left: 2px;
+}
+
+select {
+    min-width:100px;
+    height:30px;
+    line-height:inherit;
+    color: #e87352;
+}
+
+.horiz-form {
+    padding:10px 0px;
+}
+
+
