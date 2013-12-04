@@ -425,6 +425,7 @@ input {
     font-family: lato, roboto, sans-serif;
     color: #e87352;
     margin-left: 2px;
+    max-width: 200px;
 }
 
 select {
@@ -432,10 +433,23 @@ select {
     height:30px;
     line-height:inherit;
     color: #e87352;
+    background:transparent;
+    border: 1px solid #ccc;
 }
 
 .horiz-form {
     padding:10px 0px;
 }
 
+.btn-lawn {
+    color: #fff;
+    background-color:#e87352;
+    border-color: #cccccc;
+}
 
+.btn-lawn:hover,
+.btn-lawn:focus,
+.btn-lawn:hover:active {
+    color:#ffffff;
+    background-color: #60cd9b;
+}

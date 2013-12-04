@@ -36,10 +36,10 @@
                         <div class="card-type-sub">As needed - weekly in the summer</div>
                         <div class="horiz-line"></div>
                         <div class="card-data-row">
-                            <div class="data-date">
+                            <div class="data-date" id="mow-date-field">
                                 11/24
                             </div>
-                            <div class="data-date">
+                            <div class="data-date" id="mow-direction">
                                 NS</div>
                         </div>
                         <div class="card-data-row">
@@ -51,21 +51,25 @@
                             </div>
                         </div>
                         <div class="horiz-line"></div>
-                        <div class="mow-action">
+                        <div class="mow-action" id="mow-action">
                             <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
-                        <form role="form">
+                        <form role="form" id="mow-form">
                             <div class="form-update" id="mow-update">
                                 <div class="horiz-form">
-                                    <label>Date:</label>
-                                    <input type="text" class="datepicker">
+                                    <label for="new-mow-date">Date:</label>
+                                    <input type="text" class="datepicker" id="new-mow-date" name="new-mow-date">
                                 </div>
                                 <div class="horiz-form">
                                     <label>Direction:</label>
-                                    <select>
-                                        <option value="" disabled selected style="display:none;">Direction...</option>
+                                    <select id="new-mow-direction" name="new-mow-direction">
+                                        <option value="" selected style="display:none;">Select...</option>
                                         <option value="NS">North-South</option>
                                         <option value="EW">East-West</option>
                                     </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" id="cancel-mow-update">Cancel</button>
+                                    <button type="button" class="btn btn-lawn" id="save-mow-update">Save changes</button>
                                 </div>
                             </div>
                         </form>
@@ -77,7 +81,7 @@
                         <div class="card-type-sub">1 inch per week in late summer</div>
                         <div class="horiz-line"></div>
                         <div class="card-data-row">
-                            <div class="data-date">
+                            <div class="data-date" id="water-date-field">
                                 8/28
                             </div>
                         </div>
@@ -87,8 +91,20 @@
                             </div>
                         </div>
                         <div class="horiz-line"></div>
-                        <div class="mow-action">
+                        <div class="mow-action" id="water-action">
                             <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
+                        <form role="form" id="water-form">
+                            <div class="form-update" id="water-update">
+                                <div class="horiz-form">
+                                    <label>Date:</label>
+                                    <input type="text" class="datepicker" id="waterLabel">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" id="cancel-water-update">Cancel</button>
+                                    <button type="button" class="btn btn-lawn" id="save-water-update">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="content-card">
@@ -97,10 +113,10 @@
                         <div class="card-type-sub">Seasonally - 4 times per year</div>
                         <div class="horiz-line"></div>
                         <div class="card-data-row">
-                            <div class="data-date">
+                            <div class="data-date" id="fert-date-field">
                                 11/24
                             </div>
-                            <div class="data-types">
+                            <div class="data-types" id="fert-type">
                                 Fall Feed</div>
                         </div>
                         <div class="card-data-row">
@@ -112,8 +128,31 @@
                             </div>
                         </div>
                         <div class="horiz-line"></div>
-                        <div class="mow-action">
+                        <div class="mow-action" id="fert-action">
                             <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
+                        <form role="form" id="fert-form">
+                            <div class="form-update" id="fert-update">
+                                <div class="horiz-form">
+                                    <label>Date:</label>
+                                    <input type="text" class="datepicker" id="fertLabel">
+                                </div>
+                                <div class="horiz-form">
+                                    <label>Type:</label>
+                                    <select id="new-fert-type" name="new-fert-type">
+                                        <option value="" selected style="display:none;">Select...</option>
+                                        <option value="Moss">Moss</option>
+                                        <option value="Insecticide">Insecticide</option>
+                                        <option value="Fall Feed">Fall Feed</option>
+                                        <option value="W&F">W&amp;F</option>
+                                        <option value="General">General</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" id="cancel-fert-update">Cancel</button>
+                                    <button type="button" class="btn btn-lawn" id="save-fert-update">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -127,12 +166,70 @@
     </script>
     <script>
         $(document).ready(function() {
-                $('#mow-update').hide(0);
-            
-                $('.mow-action').click(function() {
-                    $('#mow-update').slideToggle(400);
-                });
+            //hide update fields
+            $('#mow-update').hide(0);
+            $('#water-update').hide(0);
+            $('#fert-update').hide(0);
+            //show mow update on click
+            $('#mow-action').click(function() {
+                $('#mow-update').slideToggle(400);
             });
+            //show water update on click
+            $('#water-action').click(function() {
+                $('#water-update').slideToggle(400);
+            });
+            //show fert update on click
+            $('#fert-action').click(function() {
+                $('#fert-update').slideToggle(400);
+                $('html,body').animate({
+                    scrollTop: $(document).height()
+                }, 400);
+            });
+            //clear mow form on cancel
+            $('#cancel-mow-update').click(function() {
+                $('#mow-update').slideToggle(400);
+                $('#mow-form')[0].reset();
+            });
+            //clear water form on cancel
+            $('#cancel-water-update').click(function() {
+                $('#water-update').slideToggle(400);
+                $('#water-form')[0].reset();
+            });
+            //clear fert form on cancel
+            $('#cancel-fert-update').click(function() {
+                $('#fert-update').slideToggle(400);
+                $('#fert-form')[0].reset();
+            });
+            //validate and update mow presentation on save
+            $('#save-mow-update').click(function() {
+                if ($('#new-mow-date').val().trim() === "" || $('#new-mow-direction').val() === "") {
+                    alert('Enter data');
+                } else {
+                    $('#mow-date-field').text($('#new-mow-date').val());
+                    $('#mow-direction').text($('#new-mow-direction').val());
+                    $('#mow-update').slideToggle(400);
+                }
+            });
+            //validate and update mow presentation on save
+            $('#save-water-update').click(function() {
+                if ($('#waterLabel').val().trim() === "") {
+                    alert('Enter date');
+                } else {
+                    $('#water-date-field').text($('#waterLabel').val());
+                    $('#water-update').slideToggle(400);
+                }
+            });
+            //validate and update fert presentation on save
+            $('#save-fert-update').click(function() {
+                if ($('#fertLabel').val().trim() === "" || $('#new-fert-type').val() === "") {
+                    alert('Enter data');
+                } else {
+                    $('#fert-date-field').text($('#fertLabel').val());
+                    $('#fert-type').text($('#new-fert-type').val());
+                    $('#fert-update').slideToggle(400);
+                }
+            });
+        });
     </script>
 </body>
 
