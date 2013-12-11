@@ -15,6 +15,8 @@
     <script src=../js/bootstrap.js></script>
     <script src="../libs/picker.js"></script>
     <script src="../libs/picker.date.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+    <script src="../js/app.js"></script>
 </head>
 
 <body>
@@ -36,11 +38,10 @@
                         <div class="card-type-sub">As needed - weekly in the summer</div>
                         <div class="horiz-line"></div>
                         <div class="card-data-row">
-                            <div class="data-date" id="mow-date-field">
-                                11/24
+                            <div class="data-date" id="mow-date-field1">
                             </div>
-                            <div class="data-date" id="mow-direction">
-                                NS</div>
+                            <div class="data-date" id="mow-direction1">
+                            </div>
                         </div>
                         <div class="card-data-row">
                             <div class="data-label">
@@ -81,8 +82,7 @@
                         <div class="card-type-sub">1 inch per week in late summer</div>
                         <div class="horiz-line"></div>
                         <div class="card-data-row">
-                            <div class="data-date" id="water-date-field">
-                                8/28
+                            <div class="data-date" id="water-date-field1">
                             </div>
                         </div>
                         <div class="card-data-row">
@@ -113,11 +113,10 @@
                         <div class="card-type-sub">Seasonally - 4 times per year</div>
                         <div class="horiz-line"></div>
                         <div class="card-data-row">
-                            <div class="data-date" id="fert-date-field">
-                                11/24
+                            <div class="data-date" id="fert-date-field1">
                             </div>
-                            <div class="data-types" id="fert-type">
-                                Fall Feed</div>
+                            <div class="data-types" id="fert-type1">
+                            </div>
                         </div>
                         <div class="card-data-row">
                             <div class="data-label">
@@ -205,8 +204,20 @@
                 if ($('#new-mow-date').val().trim() === "" || $('#new-mow-direction').val() === "") {
                     alert('Enter data');
                 } else {
-                    $('#mow-date-field').text($('#new-mow-date').val());
-                    $('#mow-direction').text($('#new-mow-direction').val());
+                    mowUpdate1.set("date", ($('#new-mow-date').val()));
+                    mowUpdate1.set("direction", ($('#new-mow-direction').val()));
+                    mowUpdate1.set("user", "Bryan");
+                    mowUpdate1.save(null, {
+                        success: function(mowUpdate1) {
+                            // Execute any logic that should take place after the object is saved.
+                        },
+                        error: function(mowUpdate1, error) {
+                            // Execute any logic that should take place if the save fails.
+                            // error is a Parse.Error with an error code and description.
+                        }
+                    });
+                    $('#mow-date-field1').text($('#new-mow-date').val());
+                    $('#mow-direction1').text($('#new-mow-direction').val());
                     $('#mow-update').slideToggle(400);
                 }
             });
@@ -215,7 +226,13 @@
                 if ($('#waterLabel').val().trim() === "") {
                     alert('Enter date');
                 } else {
-                    $('#water-date-field').text($('#waterLabel').val());
+                    waterUpdate1.set("date", ($('#waterLabel').val()));
+                    waterUpdate1.set("user", "Bryan");
+                    waterUpdate1.save(null, {
+                        success: function(waterUpdate1) {},
+                        error: function(mowUpdate1, error) {}
+                    });
+                    $('#water-date-field1').text($('#waterLabel').val());
                     $('#water-update').slideToggle(400);
                 }
             });
@@ -224,8 +241,17 @@
                 if ($('#fertLabel').val().trim() === "" || $('#new-fert-type').val() === "") {
                     alert('Enter data');
                 } else {
-                    $('#fert-date-field').text($('#fertLabel').val());
-                    $('#fert-type').text($('#new-fert-type').val());
+                    fertUpdate1.set("date", ($('#fertLabel').val()));
+                    fertUpdate1.set("type", ($('#new-fert-type').val()));
+                    fertUpdate1.set("user", "Bryan");
+                    fertUpdate1.save(null, {
+                        success: function(fertUpdate1) {
+                        },
+                        error: function(mowUpdate1, error) {
+                        }
+                    });
+                    $('#fert-date-field1').text($('#fertLabel').val());
+                    $('#fert-type1').text($('#new-fert-type').val());
                     $('#fert-update').slideToggle(400);
                 }
             });
