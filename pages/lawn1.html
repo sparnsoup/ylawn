@@ -204,14 +204,16 @@
                 if ($('#new-mow-date').val().trim() === "" || $('#new-mow-direction').val() === "") {
                     alert('Enter data');
                 } else {
-                    mowUpdate1.set("date", ($('#new-mow-date').val()));
-                    mowUpdate1.set("direction", ($('#new-mow-direction').val()));
-                    mowUpdate1.set("user", "Bryan");
-                    mowUpdate1.save(null, {
-                        success: function(mowUpdate1) {
+                    lawn1 = new Lawn1();
+                    lawn1.set("date", ($('#new-mow-date').val()));
+                    lawn1.set("direction", ($('#new-mow-direction').val()));
+                    lawn1.set("user", "Bryan");
+                    lawn1.set("mode", "mow");
+                    lawn1.save(null, {
+                        success: function(lawn1) {
                             // Execute any logic that should take place after the object is saved.
                         },
-                        error: function(mowUpdate1, error) {
+                        error: function(lawn1, error) {
                             // Execute any logic that should take place if the save fails.
                             // error is a Parse.Error with an error code and description.
                         }
@@ -221,16 +223,18 @@
                     $('#mow-update').slideToggle(400);
                 }
             });
-            //validate and update mow presentation on save
+            //validate and update water presentation on save
             $('#save-water-update').click(function() {
                 if ($('#waterLabel').val().trim() === "") {
                     alert('Enter date');
                 } else {
-                    waterUpdate1.set("date", ($('#waterLabel').val()));
-                    waterUpdate1.set("user", "Bryan");
-                    waterUpdate1.save(null, {
-                        success: function(waterUpdate1) {},
-                        error: function(mowUpdate1, error) {}
+                    lawn1 = new Lawn1();
+                    lawn1.set("date", ($('#waterLabel').val()));
+                    lawn1.set("user", "Bryan");
+                    lawn1.set("mode", "water");
+                    lawn1.save(null, {
+                        success: function(lawn1) {},
+                        error: function(lawn1, error) {}
                     });
                     $('#water-date-field1').text($('#waterLabel').val());
                     $('#water-update').slideToggle(400);
@@ -241,20 +245,90 @@
                 if ($('#fertLabel').val().trim() === "" || $('#new-fert-type').val() === "") {
                     alert('Enter data');
                 } else {
-                    fertUpdate1.set("date", ($('#fertLabel').val()));
-                    fertUpdate1.set("type", ($('#new-fert-type').val()));
-                    fertUpdate1.set("user", "Bryan");
-                    fertUpdate1.save(null, {
-                        success: function(fertUpdate1) {
-                        },
-                        error: function(mowUpdate1, error) {
-                        }
+                    lawn1 = new Lawn1();
+                    lawn1.set("date", ($('#fertLabel').val()));
+                    lawn1.set("type", ($('#new-fert-type').val()));
+                    lawn1.set("user", "Bryan");
+                    lawn1.set("mode", "fert");
+                    lawn1.save(null, {
+                        success: function(lawn1) {},
+                        error: function(lawn1, error) {}
                     });
                     $('#fert-date-field1').text($('#fertLabel').val());
                     $('#fert-type1').text($('#new-fert-type').val());
                     $('#fert-update').slideToggle(400);
                 }
             });
+        });
+    </script>
+    <script>
+        var Lawn1 = Parse.Object.extend("Lawn1");
+        var lawn1 = new Lawn1();
+        var lawnQuery1 = new Parse.Query(Lawn1);
+        var lawnQuery2 = new Parse.Query(Lawn1);
+        var lawnQuery3 = new Parse.Query(Lawn1);
+        /*var WaterUpdate1 = Parse.Object.extend("WaterUpdate1");
+var waterUpdate1 = new WaterUpdate1();*/
+        /*var waterQuery1 = new Parse.Query(WaterUpdate1);
+var FertUpdate1 = Parse.Object.extend("FertUpdate1");
+var fertUpdate1 = new FertUpdate1();
+var fertQuery1 = new Parse.Query(FertUpdate1);*/
+
+         //display saved data
+        lawnQuery1.equalTo("mode", "mow");
+        lawnQuery1.find({
+            success: function(results) {
+                // Successfully retrieved the object.
+                for (var i = 0; i < results.length; i++) {
+                    var mowObject = results[results.length - 1];
+                    //alert(object.id + ' - ' + object.get('date'));
+                    //var results = object;
+                    var lastMowDate = mowObject.get('date');
+                    var lastDirection = mowObject.get('direction');
+                    var lastMowCreated = mowObject.get('updatedAt');
+                    $('#mow-date-field1').html(lastMowDate);
+                    $('#mow-direction1').html(lastDirection);
+                }
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+         //display saved data
+        lawnQuery2.equalTo("mode", "water");
+        lawnQuery2.find({
+            success: function(results) {
+                // Successfully retrieved the object.
+                for (var i = 0; i < results.length; i++) {
+                    var waterObject = results[results.length - 1];
+                    var lastWaterDate = waterObject.get('date');
+                    var lastWaterCreated = waterObject.get('updatedAt');
+                    $('#water-date-field1').html(lastWaterDate);
+                }
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+         //display saved data
+        lawnQuery3.equalTo("mode", "fert");
+        lawnQuery3.find({
+            success: function(results) {
+                // Successfully retrieved the object.
+                for (var i = 0; i < results.length; i++) {
+                    var fertObject = results[results.length - 1];
+                    var lastFertDate = fertObject.get('date');
+                    var lastType = fertObject.get('type');
+                    var lastFertCreated = fertObject.get('updatedAt');
+                    $('#fert-date-field1').html(lastFertDate);
+                    $('#fert-type1').html(lastType);
+                }
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
         });
     </script>
 </body>
