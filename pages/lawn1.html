@@ -264,9 +264,9 @@
     <script>
         var Lawn1 = Parse.Object.extend("Lawn1");
         var lawn1 = new Lawn1();
-        var lawnQuery1 = new Parse.Query(Lawn1);
-        var lawnQuery2 = new Parse.Query(Lawn1);
-        var lawnQuery3 = new Parse.Query(Lawn1);
+        var lawn1Query1 = new Parse.Query(Lawn1);
+        var lawn1Query2 = new Parse.Query(Lawn1);
+        var lawn1Query3 = new Parse.Query(Lawn1);
         /*var WaterUpdate1 = Parse.Object.extend("WaterUpdate1");
 var waterUpdate1 = new WaterUpdate1();*/
         /*var waterQuery1 = new Parse.Query(WaterUpdate1);
@@ -275,8 +275,8 @@ var fertUpdate1 = new FertUpdate1();
 var fertQuery1 = new Parse.Query(FertUpdate1);*/
 
          //display saved data
-        lawnQuery1.equalTo("mode", "mow");
-        lawnQuery1.find({
+        lawn1Query1.equalTo("mode", "mow");
+        lawn1Query1.find({
             success: function(results) {
                 // Successfully retrieved the object.
                 for (var i = 0; i < results.length; i++) {
@@ -296,8 +296,8 @@ var fertQuery1 = new Parse.Query(FertUpdate1);*/
         });
 
          //display saved data
-        lawnQuery2.equalTo("mode", "water");
-        lawnQuery2.find({
+        lawn1Query2.equalTo("mode", "water");
+        lawn1Query2.find({
             success: function(results) {
                 // Successfully retrieved the object.
                 for (var i = 0; i < results.length; i++) {
@@ -313,8 +313,8 @@ var fertQuery1 = new Parse.Query(FertUpdate1);*/
         });
 
          //display saved data
-        lawnQuery3.equalTo("mode", "fert");
-        lawnQuery3.find({
+        lawn1Query3.equalTo("mode", "fert");
+        lawn1Query3.find({
             success: function(results) {
                 // Successfully retrieved the object.
                 for (var i = 0; i < results.length; i++) {
