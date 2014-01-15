@@ -23,7 +23,7 @@
  * When the picker is opened, the input element is “activated”.
  */
 .picker__input.picker__input--active {
-  border-color: #0089ec;
+  border-color: #67b0d1;
 }
 /**
  * The holder is the only “scrollable” top-level container element.

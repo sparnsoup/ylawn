@@ -10,7 +10,7 @@ body {
     color: #fff;
     text-align: left;
     text-shadow: 0 1px 3px rgba(0s, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-    background: rgb(41, 74, 26);
+    background: #294a1a;
     background: linear-gradient(to right, #30664d 0%, #30664d 100%);
 }
 .navbar-brand {
@@ -465,4 +465,19 @@ select {
 
 .reminder-action a{
     color:#e87352;
+}
+
+.settings-card-title {
+    font-family: josefin-slab, arial, sans-serif;
+    font-size: 24px;
+    padding: 2px 0px 0px 15px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.settings-content-card {
+    border-radius: 4px;
+    margin: 10px 0px;
+    position: relative;
+    cursor: pointer;
 }
