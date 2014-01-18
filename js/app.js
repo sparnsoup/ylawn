@@ -17,9 +17,11 @@ testObject.save({foo: "bar"}, {
 var Lawn1 = Parse.Object.extend("Lawn1");
 var lawn1 = new Lawn1();
 var ylawnQuery1 = new Parse.Query(Lawn1);
+
 var Lawn2 = Parse.Object.extend("Lawn2");
 var lawn2 = new Lawn2();
 var ylawnQuery2 = new Parse.Query(Lawn2);
+
 var Lawn3 = Parse.Object.extend("Lawn3");
 var lawn3 = new Lawn3();
 var ylawnQuery3 = new Parse.Query(Lawn3);
@@ -27,6 +29,7 @@ var ylawnQuery3 = new Parse.Query(Lawn3);
 
 //display saved data
 ylawnQuery1.equalTo("user", "Bryan");
+ylawnQuery1.ascending('createdAt');
 ylawnQuery1.find({
     success: function (results) {
         // Successfully retrieved the object.
@@ -42,6 +45,7 @@ ylawnQuery1.find({
 });
 //display saved data
 ylawnQuery2.equalTo("user", "Bryan");
+ylawnQuery2.ascending('createdAt');
 ylawnQuery2.find({
     success: function (results) {
         // Successfully retrieved the object.
@@ -57,6 +61,7 @@ ylawnQuery2.find({
 });
 //display saved data
 ylawnQuery3.equalTo("user", "Bryan");
+ylawnQuery3.ascending('createdAt');
 ylawnQuery3.find({
     success: function (results) {
         // Successfully retrieved the object.

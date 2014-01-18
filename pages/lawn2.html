@@ -266,6 +266,7 @@
 
          //display saved data
         lawn2Query1.equalTo("mode", "mow");
+        lawn2Query1.ascending('createdAt');
         lawn2Query1.find({
             success: function(results) {
                 // Successfully retrieved the object.
@@ -287,6 +288,7 @@
 
          //display saved data
         lawn2Query2.equalTo("mode", "water");
+        lawn2Query2.ascending('createdAt');
         lawn2Query2.find({
             success: function(results) {
                 // Successfully retrieved the object.
@@ -304,6 +306,7 @@
 
          //display saved data
         lawn2Query3.equalTo("mode", "fert");
+        lawn2Query3.ascending('createdAt');
         lawn2Query3.find({
             success: function(results) {
                 // Successfully retrieved the object.

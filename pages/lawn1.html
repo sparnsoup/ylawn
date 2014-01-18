@@ -276,6 +276,7 @@ var fertQuery1 = new Parse.Query(FertUpdate1);*/
 
          //display saved data
         lawn1Query1.equalTo("mode", "mow");
+        lawn1Query1.ascending('createdAt');
         lawn1Query1.find({
             success: function(results) {
                 // Successfully retrieved the object.
@@ -297,6 +298,7 @@ var fertQuery1 = new Parse.Query(FertUpdate1);*/
 
          //display saved data
         lawn1Query2.equalTo("mode", "water");
+        lawn1Query2.ascending('createdAt');
         lawn1Query2.find({
             success: function(results) {
                 // Successfully retrieved the object.
@@ -314,6 +316,7 @@ var fertQuery1 = new Parse.Query(FertUpdate1);*/
 
          //display saved data
         lawn1Query3.equalTo("mode", "fert");
+        lawn1Query3.ascending('createdAt');
         lawn1Query3.find({
             success: function(results) {
                 // Successfully retrieved the object.
