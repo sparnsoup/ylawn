@@ -4313,7 +4313,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar {
   position: relative;
-  min-height: 40px;
+  min-height: 45px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4483,7 +4483,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  padding: 10px 15px;
+  padding: 11px 15px;
   font-size: 22px;
   line-height: 20px;
 }
