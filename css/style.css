@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: roboto, sans-serif;
 }
-.bar {
+.navbar {
     color: #fff;
     text-align: left;
     text-shadow: 0 1px 3px rgba(0s, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
@@ -480,71 +480,4 @@ select {
     margin: 10px 0px;
     position: relative;
     cursor: pointer;
-}
-
-.table-view-cell .navigate-left > .btn,
-.table-view-cell .navigate-left > .badge,
-.table-view-cell .navigate-left > .toggle,
-.table-view-cell .navigate-right > .btn,
-.table-view-cell .navigate-right > .badge,
-.table-view-cell .navigate-right > .toggle,
-.table-view-cell .push-left > .btn,
-.table-view-cell .push-left > .badge,
-.table-view-cell .push-left > .toggle,
-.table-view-cell .push-right > .btn,
-.table-view-cell .push-right > .badge,
-.table-view-cell .push-right > .toggle,
-.table-view-cell > a .navigate-left > .btn,
-.table-view-cell > a .navigate-left > .badge,
-.table-view-cell > a .navigate-left > .toggle,
-.table-view-cell > a .navigate-right > .btn,
-.table-view-cell > a .navigate-right > .badge,
-.table-view-cell > a .navigate-right > .toggle,
-.table-view-cell > a .push-left > .btn,
-.table-view-cell > a .push-left > .badge,
-.table-view-cell > a .push-left > .toggle,
-.table-view-cell > a .push-right > .btn,
-.table-view-cell > a .push-right > .badge,
-.table-view-cell > a .push-right > .toggle {
-  right: 35px;
-}
-
-.navigate-left:after,
-.navigate-right:after,
-.push-left:after,
-.push-right:after {
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  color: #bbb;
-  font-family: Ratchicons;
-  font-size: inherit;
-  text-decoration: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.navigate-left:after,
-.push-left:after {
-  left: 15px;
-  content: '\e822';
-}
-
-.navigate-right:after,
-.push-right:after {
-  right: 15px;
-  content: '\e826';
-}
-
-.navigate-left:after,
-.push-left:after {
-  content: '';
-}
-
-.navigate-right:after,
-.push-right:after {
-  content: '';
 }
