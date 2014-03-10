@@ -47,7 +47,7 @@ html {
 
 body {
   margin: 0;
-  padding-top:43px;
+  padding-top:47px;
   background-color: #E5E5E5;
 }
 
@@ -4313,9 +4313,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar {
   position: relative;
-  min-height: 45px;
+  min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
 }
 
 .navbar:before,
@@ -4472,7 +4471,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0 0 3px;
 }
 
 .navbar-fixed-bottom {
@@ -4483,7 +4482,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  padding: 11px 15px;
+  padding: 14px 15px;
   font-size: 22px;
   line-height: 20px;
 }
