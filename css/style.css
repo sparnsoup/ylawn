@@ -10,9 +10,9 @@ body {
     color: #4AAB47;
     text-align: left;
     text-shadow: 0 1px 3px rgba(0s, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-    background: #294a1a;
-    background: linear-gradient(to right, #fff 0%, #fcfcfc 100%);
-    border-bottom: 300px solid #60cd9b;
+    background: rgba(255,255,255,1);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255,255,255,0.9) 100%);
+    border-bottom: 3px solid #60cd9b;
     -webkit-animation: hue 15s infinite alternate;
 }
 .navbar-brand {
