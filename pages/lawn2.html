@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>yLawn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+    <meta charset="utf-8">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
+    <link href="../css/default.date.css" rel="stylesheet">
+     <script src="http://use.edgefonts.net/josefin-slab:n4,n7,i3,n3,i4,n1,i7,i1,i6,n6:all;kelly-slab:n4:all;lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all;rosario:n7,i7,i4,n4:all.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src=../js/bootstrap.js></script>
+    <script src="../libs/picker.js"></script>
+    <script src="../libs/picker.date.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/push.js"></script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <span class="navbar-brand">
+                    <i class="fa fa-chevron-left" onclick="history.back(-1)"></i>&nbsp;&nbsp;Details</span>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="details-banner lawn-bg2">
+                    <span class="lawnid">Middle Lawn</span>
+                </div>
+                <div class="content-card">
+                    <div class="card-wrapper">
+                        <div class="card-type mow-title">Mow</div>
+                        <div class="card-type-sub">As needed - weekly in the summer</div>
+                        <div class="horiz-line"></div>
+                        <div class="card-data-row">
+                            <div class="data-date" id="mow-date-field2">
+                            </div>
+                            <div class="data-date" id="mow-direction2">
+                            </div>
+                        </div>
+                        <div class="card-data-row">
+                            <div class="data-label">
+                                Last Mowed
+                            </div>
+                            <div class="data-label">
+                                Direction
+                            </div>
+                        </div>
+                        <div class="horiz-line"></div>
+                        <div class="mow-action" id="mow-action2">
+                            <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
+                        <form role="form" id="mow-form2">
+                            <div class="form-update" id="mow-update2">
+                                <div class="horiz-form">
+                                    <label for="new-mow-date2">Date:</label>
+                                    <input type="text" class="datepicker" id="new-mow-date2" name="new-mow-date2">
+                                </div>
+                                <div class="horiz-form">
+                                    <label>Direction:</label>
+                                    <select id="new-mow-direction2" name="new-mow-direction2">
+                                        <option value="" selected style="display:none;">Select...</option>
+                                        <option value="NS">North-South</option>
+                                        <option value="EW">East-West</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" id="cancel-mow-update2">Cancel</button>
+                                    <button type="button" class="btn btn-lawn" id="save-mow-update2">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-wrapper">
+                        <div class="card-type water-title">Water</div>
+                        <div class="card-type-sub">1 inch per week in late summer</div>
+                        <div class="horiz-line"></div>
+                        <div class="card-data-row">
+                            <div class="data-date" id="water-date-field2">
+                            </div>
+                        </div>
+                        <div class="card-data-row">
+                            <div class="data-label">
+                                Last Watered
+                            </div>
+                        </div>
+                        <div class="horiz-line"></div>
+                        <div class="mow-action" id="water-action2">
+                            <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
+                        <form role="form" id="water-form2">
+                            <div class="form-update" id="water-update2">
+                                <div class="horiz-form">
+                                    <label>Date:</label>
+                                    <input type="text" class="datepicker" id="waterLabel2">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" id="cancel-water-update2">Cancel</button>
+                                    <button type="button" class="btn btn-lawn" id="save-water-update2">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-wrapper">
+                        <div class="card-type fert-title">Fertilizer</div>
+                        <div class="card-type-sub">Seasonally - 4 times per year</div>
+                        <div class="horiz-line"></div>
+                        <div class="card-data-row">
+                            <div class="data-date" id="fert-date-field2">
+                            </div>
+                            <div class="data-types" id="fert-type2">
+                            </div>
+                        </div>
+                        <div class="card-data-row">
+                            <div class="data-label">
+                                Last Fertilized
+                            </div>
+                            <div class="data-type-label">
+                                Type
+                            </div>
+                        </div>
+                        <div class="horiz-line"></div>
+                        <div class="mow-action" id="fert-action2">
+                            <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Update</div>
+                        <form role="form" id="fert-form2">
+                            <div class="form-update" id="fert-update2">
+                                <div class="horiz-form">
+                                    <label>Date:</label>
+                                    <input type="text" class="datepicker" id="fertLabel2">
+                                </div>
+                                <div class="horiz-form">
+                                    <label>Type:</label>
+                                    <select id="new-fert-type2" name="new-fert-type2">
+                                        <option value="" selected style="display:none;">Select...</option>
+                                        <option value="Moss">Moss</option>
+                                        <option value="Insecticide">Insecticide</option>
+                                        <option value="Fall Feed">Fall Feed</option>
+                                        <option value="W&F">W&amp;F</option>
+                                        <option value="General">General</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" id="cancel-fert-update2">Cancel</button>
+                                    <button type="button" class="btn btn-lawn" id="save-fert-update2">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.datepicker').pickadate({
+            format: 'mm/dd'
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            //hide update fields
+            $('#mow-update2').hide(0);
+            $('#water-update2').hide(0);
+            $('#fert-update2').hide(0);
+            //show mow update on click
+            $('#mow-action2').click(function() {
+                $('#mow-update2').slideToggle(400);
+            });
+            //show water update on click
+            $('#water-action2').click(function() {
+                $('#water-update2').slideToggle(400);
+            });
+            //show fert update on click
+            $('#fert-action2').click(function() {
+                $('#fert-update2').slideToggle(400);
+                $('html,body').animate({
+                    scrollTop: $(document).height()
+                }, 400);
+            });
+            //clear mow form on cancel
+            $('#cancel-mow-update2').click(function() {
+                $('#mow-update2').slideToggle(400);
+                $('#mow-form2')[0].reset();
+            });
+            //clear water form on cancel
+            $('#cancel-water-update2').click(function() {
+                $('#water-update2').slideToggle(400);
+                $('#water-form2')[0].reset();
+            });
+            //clear fert form on cancel
+            $('#cancel-fert-update2').click(function() {
+                $('#fert-update2').slideToggle(400);
+                $('#fert-form2')[0].reset();
+            });
+        });
+    </script>
+    <script>
+        //validate and update mow presentation on save
+        $('#save-mow-update2').click(function() {
+            if ($('#new-mow-date2').val().trim() === "" || $('#new-mow-direction2').val() === "") {
+                alert('Enter data');
+            } else {
+                lawn2 = new Lawn2();
+                lawn2.set("date", ($('#new-mow-date2').val()));
+                lawn2.set("direction", ($('#new-mow-direction2').val()));
+                lawn2.set("user", "Bryan");
+                lawn2.set("mode", "mow");
+                lawn2.save(null, {
+                    success: function(lawn2) {},
+                    error: function(lawn2, error) {}
+                });
+                $('#mow-date-field2').text($('#new-mow-date2').val());
+                $('#mow-direction2').text($('#new-mow-direction2').val());
+                $('#mow-update2').slideToggle(400);
+            }
+        });
+         //validate and update water presentation on save
+        $('#save-water-update2').click(function() {
+            if ($('#waterLabel2').val().trim() === "") {
+                alert('Enter date');
+            } else {
+                lawn2 = new Lawn2();
+                lawn2.set("date", ($('#waterLabel2').val()));
+                lawn2.set("user", "Bryan");
+                lawn2.set("mode", "water");
+                lawn2.save(null, {
+                    success: function(lawn2) {},
+                    error: function(lawn2, error) {}
+                });
+                $('#water-date-field2').text($('#waterLabel2').val());
+                $('#water-update2').slideToggle(400);
+            }
+        });
+         //validate and update fert presentation on save
+        $('#save-fert-update2').click(function() {
+            if ($('#fertLabel2').val().trim() === "" || $('#new-fert-type2').val() === "") {
+                alert('Enter data');
+            } else {
+                lawn2 = new Lawn2();
+                lawn2.set("date", ($('#fertLabel2').val()));
+                lawn2.set("type", ($('#new-fert-type2').val()));
+                lawn2.set("user", "Bryan");
+                lawn2.set("mode", "fert");
+                lawn2.save(null, {
+                    success: function(lawn2) {},
+                    error: function(lawn2, error) {}
+                });
+                $('#fert-date-field2').text($('#fertLabel2').val());
+                $('#fert-type2').text($('#new-fert-type2').val());
+                $('#fert-update2').slideToggle(400);
+            }
+        });
+    </script>
+    <script>
+        var Lawn2 = Parse.Object.extend("Lawn2");
+        var lawn2 = new Lawn2();
+        var lawn2Query1 = new Parse.Query(Lawn2);
+        var lawn2Query2 = new Parse.Query(Lawn2);
+        var lawn2Query3 = new Parse.Query(Lawn2);
+
+         //display saved data
+        lawn2Query1.equalTo("mode", "mow");
+        lawn2Query1.ascending('createdAt');
+        lawn2Query1.find({
+            success: function(results) {
+                // Successfully retrieved the object.
+                for (var i = 0; i < results.length; i++) {
+                    var mowObject = results[results.length - 1];
+                    //alert(object.id + ' - ' + object.get('date'));
+                    //var results = object;
+                    var lastMowDate = mowObject.get('date');
+                    var lastDirection = mowObject.get('direction');
+                    var lastMowCreated = mowObject.get('updatedAt');
+                    $('#mow-date-field2').html(lastMowDate);
+                    $('#mow-direction2').html(lastDirection);
+                }
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+         //display saved data
+        lawn2Query2.equalTo("mode", "water");
+        lawn2Query2.ascending('createdAt');
+        lawn2Query2.find({
+            success: function(results) {
+                // Successfully retrieved the object.
+                for (var i = 0; i < results.length; i++) {
+                    var waterObject = results[results.length - 1];
+                    var lastWaterDate = waterObject.get('date');
+                    var lastWaterCreated = waterObject.get('updatedAt');
+                    $('#water-date-field2').html(lastWaterDate);
+                }
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+         //display saved data
+        lawn2Query3.equalTo("mode", "fert");
+        lawn2Query3.ascending('createdAt');
+        lawn2Query3.find({
+            success: function(results) {
+                // Successfully retrieved the object.
+                for (var i = 0; i < results.length; i++) {
+                    var fertObject = results[results.length - 1];
+                    var lastFertDate = fertObject.get('date');
+                    var lastType = fertObject.get('type');
+                    var lastFertCreated = fertObject.get('updatedAt');
+                    $('#fert-date-field2').html(lastFertDate);
+                    $('#fert-type2').html(lastType);
+                }
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    </script>
+</body>
+
+</html>
