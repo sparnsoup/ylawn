@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   id="svg73789"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="july_icon.svg">
+  <defs
+     id="defs73791" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-218.46462"
+     inkscape:cy="41.187694"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata73794">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.36218)">
+    <rect
+       style="fill:#67b0d1;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect70056-2"
+       width="100"
+       height="100"
+       x="0"
+       y="952.36218" />
+    <path
+       id="path74642"
+       d="m 80.55536,1005.1389 h -5.553499 c -1.53492,0 -2.77814,-1.2432 -2.77814,-2.7767 0,-1.5335 1.24322,-2.77812 2.77814,-2.77812 h 5.553499 c 1.53492,0 2.77814,1.24462 2.77814,2.77812 0,1.5335 -1.24183,2.7767 -2.77814,2.7767 z M 69.64422,986.64898 c -1.08486,1.0849 -2.846199,1.0849 -3.92829,0 -1.08486,-1.0848 -1.08486,-2.8434 0,-3.9282 l 3.92829,-3.9283 c 1.08209,-1.0849 2.84343,-1.0849 3.928291,0 1.08208,1.0848 1.08208,2.8434 0,3.9283 l -3.928291,3.9282 z m -19.64283,32.37932 c -9.205365,0 -16.668836,-7.4621 -16.668836,-16.6661 0,-9.20542 7.462082,-16.66742 16.668836,-16.66742 9.20536,0 16.66605,7.462 16.66605,16.66742 0,9.204 -7.46069,16.6661 -16.66605,16.6661 z m 0,-27.77732 c -6.136911,0 -11.112557,4.9743 -11.112557,11.11122 0,6.1355 4.977035,11.1112 11.112558,11.1112 6.13552,0 11.10978,-4.9757 11.10978,-11.1112 0,-6.13692 -4.97287,-11.11122 -11.10978,-11.11122 z m 0,-11.1111 c -1.53492,0 -2.77814,-1.2446 -2.77814,-2.7782 v -5.5549 c 0,-1.5335 1.24322,-2.7781 2.77814,-2.7781 1.53353,0 2.77814,1.2446 2.77814,2.7781 v 5.5549 c 0,1.5336 -1.246,2.7782 -2.77814,2.7782 z m -19.642833,6.5091 -3.928289,-3.9282 c -1.084863,-1.0849 -1.084863,-2.8435 0,-3.9283 1.084864,-1.0849 2.843425,-1.0849 3.928289,0 l 3.928288,3.9283 c 1.084863,1.0848 1.084863,2.8434 0,3.9282 -1.084863,1.0849 -2.843425,1.0849 -3.928288,0 z m -2.58089,15.71322 c 0,1.5335 -1.244607,2.7767 -2.778139,2.7767 H 19.44325 c -1.533534,0 -2.77675,-1.2432 -2.77675,-2.7767 0,-1.5335 1.244606,-2.77812 2.77675,-2.77812 h 5.556278 c 1.534921,0 2.778139,1.24462 2.778139,2.77812 z m 2.58089,15.7132 c 1.084863,-1.0835 2.843425,-1.0835 3.928288,0 1.084863,1.0848 1.084863,2.8448 0,3.9282 l -3.928288,3.9283 c -1.084863,1.0849 -2.843424,1.0849 -3.928289,0 -1.084863,-1.0834 -1.084863,-2.8434 0,-3.9283 l 3.928289,-3.9282 z m 19.642833,6.5091 c 1.53353,0 2.77814,1.2433 2.77814,2.7768 v 5.5563 c 0,1.5335 -1.24461,2.7781 -2.77814,2.7781 -1.53492,0 -2.77814,-1.2446 -2.77814,-2.7781 v -5.5563 c 0,-1.5335 1.24322,-2.7768 2.77814,-2.7768 z m 19.64283,-6.5091 3.928291,3.9282 c 1.08208,1.0849 1.08208,2.8449 0,3.9283 -1.084861,1.0849 -2.8462,1.0849 -3.928291,0 l -3.92829,-3.9283 c -1.08486,-1.0834 -1.08486,-2.8434 0,-3.9282 1.08209,-1.0849 2.84204,-1.0849 3.92829,0 z"
+       clip-rule="evenodd"
+       inkscape:connector-curvature="0"
+       style="fill-rule:evenodd;fill:#ffffff;fill-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="23.71048"
+       y="1046.5372"
+       id="text76054"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan76056"
+         x="23.71048"
+         y="1046.5372">July/August</tspan></text>
+  </g>
+</svg>

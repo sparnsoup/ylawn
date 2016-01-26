@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="400"
+   height="400"
+   viewBox="0 0 400 400"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   id="svg2994"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="iconmonstr-calendar-6-icon.svg"
+   inkscape:export-filename="C:\Users\59361\Documents\GitHub\ylawn\img\iconmonstr-calendar-6-icon.png"
+   inkscape:export-xdpi="56.919998"
+   inkscape:export-ydpi="56.919998"><metadata
+   id="metadata3001"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs2999" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="706"
+   id="namedview2997"
+   showgrid="false"
+   inkscape:zoom="0.4609375"
+   inkscape:cx="-512.68136"
+   inkscape:cy="156.002"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg2994"
+   fit-margin-top="8"
+   fit-margin-bottom="8"
+   fit-margin-left="8"
+   fit-margin-right="8"
+   showguides="true"
+   inkscape:guide-bbox="true" />
+<rect
+   style="fill:#e87352;fill-opacity:1;fill-rule:evenodd;stroke:none"
+   id="rect3900"
+   width="400"
+   height="400"
+   x="0"
+   y="0"
+   rx="2.3485498"
+   ry="1.3375449" /><path
+   id="calendar-6-icon"
+   d="m 298.95136,103.51282 c 0,7.02302 -5.69329,12.71631 -12.71631,12.71631 -7.02301,0 -12.71701,-5.69329 -12.71701,-12.71631 V 71.509299 c 0,-7.02302 5.694,-12.71631 12.71701,-12.71631 7.02302,0 12.71631,5.69329 12.71631,12.71631 V 103.51282 z M 127.13772,71.451909 c 0,-7.02302 -5.694,-12.717709 -12.71631,-12.717709 -7.02371,0 -12.71701,5.694689 -12.71701,12.717709 v 32.002131 c 0,7.02301 5.6933,12.7177 12.71701,12.7177 7.02231,0 12.71631,-5.69469 12.71631,-12.7177 V 71.451909 z m 187.18449,18.56707 v 13.029141 c 0,15.48702 -12.60014,28.08716 -28.08716,28.08716 -15.48772,0 -28.08785,-12.60014 -28.08785,-28.08716 V 90.018979 H 142.50857 v 12.970351 c 0,15.48843 -12.60014,28.08856 -28.08716,28.08856 -15.48772,0 -28.08786,-12.60013 -28.08786,-28.08856 V 90.018979 H 55.83051 V 341.2658 H 344.16949 V 90.018979 h -29.84728 z m 1.85321,223.252741 H 83.824585 V 157.57498 H 316.17542 V 313.27172 z M 189.42174,291.74568 c 29.59394,-53.07047 50.14579,-80.34649 78.20705,-104.83571 l -3.64833,-8.38912 c -34.0268,21.17122 -52.33282,37.12154 -80.03786,68.56238 -14.73608,-10.50547 -23.05172,-15.33304 -36.16345,-21.6772 l -11.20883,10.36271 c 22.41696,20.77719 34.59928,34.48099 52.85142,55.97694 z"
+   style="fill:#ffffff;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+</svg>
