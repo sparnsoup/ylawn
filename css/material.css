@@ -11156,7 +11156,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .app-title {
     cursor: pointer;
     display: block;
-    margin-left: 2px;
+    margin-left: -12px;
     width: 175px;
 }
 
