@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lawn Track</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" sizes="196x196" href="img/icon.png">
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="transparent-header mdl-layout__header page2-header">
+            <button class="mdl-layout-icon mdl-button mdl-js-button mdl-button--icon" onclick="history.go(-1);">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <i class="material-icons">notifications_none</i>
+                <i class="material-icons">more_vert</i>
+            </div>
+            <!-- Title -->
+            <div class="transparent-title">
+                <div class="mdl-layout-titles">Side Yard</div>
+            </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Mow</a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab">Water</a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab">Feed</a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="page-content">
+                    <!-- Your content goes here -->
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">
+                    <!-- Your content goes here -->
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <div class="page-content">
+                    <!-- Your content goes here -->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
