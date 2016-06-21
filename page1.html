@@ -36,8 +36,29 @@
         </header>
         <main class="mdl-layout__content">
             <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-                <div class="page-content">
-                    <!-- Your content goes here -->
+                <div class="page-content page-cards">
+                    <div class="mdl-card">
+                        <div class="mdl-card__title" style="padding-bottom: 0;">
+                            <h2 class="mdl-card__title-text yard-detail__title">Last Mowed</h2>
+                        </div>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+                                <div class="yard-detail__card mdl-card mdl-shadow--4dp">
+                                    <div >
+                                        <div class="yard-detail-data">Data</div>
+                                    </div>
+                                    <div class="yard-detail-card__supporting-text">Date</div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+                                <div class="yard-detail__card mdl-card mdl-shadow--4dp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            This text might describe the photo and provide further information, such as where and when it was taken.
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="mdl-layout__tab-panel" id="fixed-tab-2">
@@ -50,6 +71,9 @@
                     <!-- Your content goes here -->
                 </div>
             </section>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab">
+                <i class="material-icons">add</i>
+            </button>
         </main>
     </div>
 </body>

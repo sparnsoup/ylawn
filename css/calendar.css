@@ -1,0 +1,108 @@
+.janurary {
+    background:rgb(0, 0, 0);
+}
+
+.janurary:after {
+    content: "";
+    background:url('../img/jan.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .70;
+    position: absolute;
+    z-index: -1;   
+}
+
+.march {
+    background:rgba(0, 0, 0, 1);
+}
+
+.march:after {
+    content: "";
+    background:url('../img/mar.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .75;
+    position: absolute;
+    z-index: -1;   
+}
+
+.may {
+    background:rgba(0, 0, 0, 1);
+}
+
+.may:after {
+    content: "";
+    background:url('../img/may.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .75;
+    position: absolute;
+    z-index: -1;   
+}
+
+.july {
+    background:rgba(0, 0, 0, 1);
+}
+
+.july:after {
+    content: "";
+    background:url('../img/july.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .75;
+    position: absolute;
+    z-index: -1;   
+}
+
+.september {
+    background:rgba(0, 0, 0, 1);
+}
+
+.september:after {
+    content: "";
+    background:url('../img/sept.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .75;
+    position: absolute;
+    z-index: -1;   
+}
+
+.november {
+    background:rgba(0, 0, 0, 1);
+}
+
+.november:after {
+    content: "";
+    background:url('../img/nov.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .85;
+    position: absolute;
+    z-index: -1;   
+}
+
+
+.jan-modal:before {
+    content: "";
+    background:url('../img/jan.jpg') center / cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .99;
+    position: absolute;
+    z-index: -1;   
+}

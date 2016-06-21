@@ -496,3 +496,9 @@ select {
 75% {border-color:#e87352;} 
 }
 
+
+
+
+.yard-detail-data {
+    height: 100px;
+}

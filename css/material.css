@@ -11379,3 +11379,34 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .ignore {
     text-decoration: none;
 }
+
+.page-cards {
+    margin: 56px 10px;
+}
+
+.yard-detail__title {
+    color: #000000;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.yard-detail__card {
+    min-height: 120px;
+    min-width: 150px;
+}
+
+.yard-detail-card__supporting-text {
+  color: rgba(0,0,0, 0.54);
+  font-size: 1rem;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 16px 16px 0px 16px;
+  align-self: center;
+}
+
+.yard-detail-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:80px;"
+}
