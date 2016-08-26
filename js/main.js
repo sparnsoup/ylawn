@@ -8,9 +8,6 @@ var julyDialog = document.getElementById('july-modal');
 var septDialog = document.getElementById('sept-modal');
 var novDialog = document.getElementById('nov-modal');
 
-// Yard 1 Modals
-var mowModal1 = document.getElementById('mow-modal1');
-
 //CalendarButtons
 var showJanDialogButton = document.querySelector('#jan-dialog');
 var showMarDialogButton = document.querySelector('#mar-dialog');
@@ -18,19 +15,6 @@ var showMayDialogButton = document.querySelector('#may-dialog');
 var showJulyDialogButton = document.querySelector('#july-dialog');
 var showSeptDialogButton = document.querySelector('#sept-dialog');
 var showNovDialogButton = document.querySelector('#nov-dialog');
-
-//Yard 1 Buttons
-var showMowModalButton1 = document.querySelector('#NewMow1');
-
-//Show Yard 1 modals
-showMowModalButton1.addEventListener('click', function () {
-    mowModal1.showModal();
-});
-
-//Close Yard 1 Modals
-mowModal1.querySelector('.close').addEventListener('click', function () {
-    mowModal1.close();
-});
 
 //Show calendar modals
 showJanDialogButton.addEventListener('click', function () {
