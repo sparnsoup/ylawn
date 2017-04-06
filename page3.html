@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://fonts.googleapis.com/css?family=Rokkitt|Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
 </head>
 
 <body>
@@ -36,22 +39,160 @@
         </header>
         <main class="mdl-layout__content">
             <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-                <div class="page-content">
-                    <!-- Your content goes here -->
+                <div class="page-content page-cards">
+                    <div class="mdl-card-wide mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Last Mowed</h2></div>
+                        <div class="mdl-card__supporting">
+                            <div class="mdl-card__supporting-text supporting_left">3/31/2017</div>
+                            <div class="mdl-card__supporting-text">North - South</div>
+                        </div>
+                    </div>
                 </div>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab" id="NewMow3">
+                    <i class="material-icons">add</i>
+                </button>
+                <dialog id="mow-modal3" class="mdl-dialog">
+                    <div class="mdl-dialog__content">
+                        <form action="#">
+                            <h4>Add New Details</h4>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input datepicker" type="text" id="mowdate3">
+                                <label class="mdl-textfield__label" for="mowdate3">Date mowed?</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <select class="mdl-textfield__input mdl-js-textfield mdl-textfield--floating-label" type="text" id="mowdirection3">
+                                    <option value="" selected style="display:none;"></option>
+                                    <option value="NS">North-South</option>
+                                    <option value="EW">East-West</option>
+                                </select>
+                                <label class="mdl-textfield__label" for="sample3">Direction?</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button mdl-js-button close">Cancel</button>
+                        <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Save</button>
+                    </div>
+                </dialog>
             </section>
             <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-                <div class="page-content">
-                    <!-- Your content goes here -->
+                <div class="page-content page-cards">
+                <div class="mdl-card-wide mdl-shadow--2dp">
+                    <div class="mdl-card__title teal">
+                        <h2 class="mdl-card__title-text">Last Watered</h2></div>
+                    <div class="mdl-card__supporting">
+                        <div class="mdl-card__supporting-text">3/31/2016</div>
+                    </div>
                 </div>
-            </section>
-            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-                <div class="page-content">
-                    <!-- Your content goes here -->
-                </div>
-            </section>
-        </main>
     </div>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab" id="NewWater3">
+        <i class="material-icons">add</i>
+    </button>
+    <dialog id="water-modal3" class="mdl-dialog">
+        <div class="mdl-dialog__content">
+            <form action="#">
+                <h4>Add New Details</h4>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input datepicker" type="text" id="waterdate3">
+                    <label class="mdl-textfield__label" for="waterdate3">Date Watered?</label>
+                </div>
+            </form>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button close">Cancel</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Save</button>
+        </div>
+    </dialog>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <div class="page-content page-cards">
+            <div class="mdl-card-wide mdl-shadow--2dp">
+                <div class="mdl-card__title pink">
+                    <h2 class="mdl-card__title-text">Last Fed</h2></div>
+                <div class="mdl-card__supporting">
+                    <div class="mdl-card__supporting-text supporting_left">3/31/2017</div>
+                    <div class="mdl-card__supporting-text">Moss</div>
+                </div>
+            </div>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab" id="NewFeed3">
+            <i class="material-icons">add</i>
+        </button>
+        <dialog id="feed-modal3" class="mdl-dialog">
+            <div class="mdl-dialog__content">
+                <form action="#">
+                    <h4>Add New Details</h4>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input datepicker" type="text" id="feeddate3">
+                        <label class="mdl-textfield__label" for="feeddate3">Date Fed?</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <select class="mdl-textfield__input mdl-js-textfield mdl-textfield--floating-label" type="text" id="feedtype3">
+                            <option value="" selected style="display:none;"></option>
+                            <option value="General">General</option>
+                            <option value="Moss">Moss</option>
+                            <option value="Fall">Fall Feed</option>
+                            <option value="WeedFeed">Weed &amp; Feed</option>
+                            <option value="Insect">Insecticide</option>
+                        </select>
+                        <label class="mdl-textfield__label" for="sample3">Type?</label>
+                    </div>
+                </form>
+            </div>
+            <div class="mdl-dialog__actions">
+                <button type="button" class="mdl-button mdl-js-button close">Cancel</button>
+                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Save</button>
+            </div>
+        </dialog>
+    </section>
+    </main>
+    </div>
+    <script>
+        "use strict";
+        // Yard 3 Modals
+        var mowModal3 = document.getElementById('mow-modal3');
+        var waterModal3 = document.getElementById('water-modal3');
+        var feedModal3 = document.getElementById('feed-modal3');
+
+        //Yard 3 Buttons
+        var showMowModalButton3 = document.querySelector('#NewMow3');
+        var showWaterModalButton3 = document.querySelector('#NewWater3');
+        var showFeedModalButton3 = document.querySelector('#NewFeed3');
+
+        //Show Yard 3 modals
+        showMowModalButton3.addEventListener('click', function () {
+            mowModal3.showModal();
+        });
+        showWaterModalButton3.addEventListener('click', function () {
+            waterModal3.showModal();
+        });
+        showFeedModalButton3.addEventListener('click', function () {
+            feedModal3.showModal();
+        });
+
+        //Close Yard 3 Modals
+        mowModal3.querySelector('.close').addEventListener('click', function () {
+            mowModal3.close();
+        });
+        waterModal3.querySelector('.close').addEventListener('click', function () {
+            waterModal3.close();
+        });
+        feedModal3.querySelector('.close').addEventListener('click', function () {
+            feedModal3.close();
+        });
+    </script>
+    <script>
+        $('.datepicker').pickadate({
+            format: "mm/dd",
+            onSet: function (context) {
+                console.log('Just set stuff:', context);
+                $('#mowdate3').parent().addClass('is-dirty');
+                $('#waterdate3').parent().addClass('is-dirty');
+                $('#feeddate3').parent().addClass('is-dirty')
+            }
+        })
+    </script>
 </body>
 
 </html>

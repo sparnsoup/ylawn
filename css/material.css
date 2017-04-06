@@ -6197,11 +6197,16 @@ input.mdl-button[type="submit"] {
 
 .mdl-card__supporting-text {
     color: rgba(0, 0, 0, 0.54);
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 18px;
     overflow: hidden;
     padding: 16px 16px;
     width: 90%;
+    text-align: center;
+}
+
+.supporting_left {
+    border-right: 2px solid #ECEFF1;
 }
 
 .mdl-card__actions {
@@ -16844,7 +16849,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,
     flex-direction: column;
     font-size: 16px;
     font-weight: 400;
-    min-height: 200px;
+    min-height: 150px;
     overflow: hidden;
     /* width: 330px; */
     z-index: 1;
@@ -16857,7 +16862,19 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,
 .mdl-card-wide > .mdl-card__title {
     color: #fff;
     height: 66px;
-    background: url('../img/mowpattern.png') center / cover;
+    background: url('../img/mowpattern_blue.png') center / cover;
+}
+
+.mdl-card-wide > .mdl-card__title.teal {
+    color: #fff;
+    height: 66px;
+    background: url('../img/mowpattern_teal.png') center / cover;
+}
+
+.mdl-card-wide > .mdl-card__title.pink {
+    color: #fff;
+    height: 66px;
+    background: url('../img/mowpattern_pink.png') center / cover;
 }
 
 .page1-header {
@@ -17560,3 +17577,25 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,
    ========================================================================== */
 
 .data-dashboard {}
+
+
+.mdl-card__supporting {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    line-height: normal;
+    padding: 16px 16px;
+    -webkit-perspective-origin: 165px 56px;
+    perspective-origin: 165px 56px;
+    -webkit-transform-origin: 165px 56px;
+    transform-origin: 165px 56px;
+    box-sizing: border-box;
+}

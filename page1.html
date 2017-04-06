@@ -43,32 +43,10 @@
         <main class="mdl-layout__content">
             <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
                 <div class="page-content page-cards">
-<!--
-                    <div class="mdl-card">
-                        <div class="mdl-card__title" style="padding-bottom: 0;">
-                            <h2 class="mdl-card__title-text yard-detail__title">Last Mowed</h2>
-                        </div>
-                        <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                                <div class="yard-detail__card mdl-card mdl-shadow--4dp ">
-                                    <div class="yard-detail-data mdl-textfield__input data-dashboard" id="mow-date-data-1" type="date">07/01</div>
-                                    <div class="yard-detail-card__supporting-text">Date</div>
-                                </div>
-                            </div>
-                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                                <div class="yard-detail__card mdl-card mdl-shadow--4dp">
-                                    <div class="yard-detail-data mdl-textfield__input">East - West</div>
-                                    <div class="yard-detail-card__supporting-text">Direction</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <br/>
-                        </div>
-                    </div>
--->
                     <div class="mdl-card-wide mdl-shadow--2dp">
-                        <div class="mdl-card__title"><h2 class="mdl-card__title-text">Last Mowed</h2></div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Last Mowed</h2></div>
+                        <div class="mdl-card__supporting"><div class="mdl-card__supporting-text supporting_left">3/31/2017</div><div class="mdl-card__supporting-text">East - West</div></div>
                     </div>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab" id="NewMow1">
@@ -100,21 +78,9 @@
             </section>
             <section class="mdl-layout__tab-panel" id="fixed-tab-2">
                 <div class="page-content page-cards">
-                    <div class="mdl-card">
-                        <div class="mdl-card__title" style="padding-bottom: 0;">
-                            <h2 class="mdl-card__title-text yard-detail__title">Last Watered</h2>
-                        </div>
-                        <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                                <div class="yard-detail__card mdl-card mdl-shadow--4dp mdl-input">
-                                    <div class="yard-detail-data mdl-textfield__input data-dashboard" id="water-date-data-1" type="date">07/01</div>
-                                    <div class="yard-detail-card__supporting-text">Date</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <br/>
-                        </div>
+                    <div class="mdl-card-wide mdl-shadow--2dp">
+                        <div class="mdl-card__title teal">
+                            <h2 class="mdl-card__title-text">Last Watered</h2></div><div class="mdl-card__supporting"><div class="mdl-card__supporting-text">3/31/2016</div></div>
                     </div>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab" id="NewWater1">
@@ -138,27 +104,9 @@
             </section>
             <section class="mdl-layout__tab-panel" id="fixed-tab-3">
                 <div class="page-content page-cards">
-                    <div class="mdl-card">
-                        <div class="mdl-card__title" style="padding-bottom: 0;">
-                            <h2 class="mdl-card__title-text yard-detail__title">Last Fed</h2>
-                        </div>
-                        <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                                <div class="yard-detail__card mdl-card mdl-shadow--4dp ">
-                                    <div class="yard-detail-data mdl-textfield__input">07/06</div>
-                                    <div class="yard-detail-card__supporting-text ">Date</div>
-                                </div>
-                            </div>
-                            <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                                <div class="yard-detail__card mdl-card mdl-shadow--4dp">
-                                    <div class="yard-detail-data mdl-textfield__input">Weed & Feed</div>
-                                    <div class="yard-detail-card__supporting-text">Date</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                           <br/>
-                        </div>
+                    <div class="mdl-card-wide mdl-shadow--2dp">
+                        <div class="mdl-card__title pink">
+                            <h2 class="mdl-card__title-text">Last Fed</h2></div><div class="mdl-card__supporting"><div class="mdl-card__supporting-text supporting_left">3/31/2017</div><div class="mdl-card__supporting-text">Moss</div></div>
                     </div>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bottom-fab" id="NewFeed1">
@@ -173,7 +121,7 @@
                                 <label class="mdl-textfield__label" for="feeddate1">Date Fed?</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <select class="mdl-textfield__input mdl-js-textfield mdl-textfield--floating-label" type="text" id="mowdirection1">
+                                <select class="mdl-textfield__input mdl-js-textfield mdl-textfield--floating-label" type="text" id="feedtype2">
                                     <option value="" selected style="display:none;"></option>
                                     <option value="General">General</option>
                                     <option value="Moss">Moss</option>
